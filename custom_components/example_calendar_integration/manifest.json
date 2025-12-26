@@ -1,0 +1,11 @@
+{
+  "domain": "example_calendar_integration",
+  "name": "Example Calendar Integration",
+  "codeowners": [],
+  "dependencies": ["local_calendar"],
+  "config_flow": true,
+  "documentation": "https://github.com/example/example",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/example/example/issues",
+  "version": "1.0.0"
+}

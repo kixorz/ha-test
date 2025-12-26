@@ -1,0 +1,16 @@
+add_event:
+  description: "Adds a future event to a local calendar."
+  fields:
+    calendar_id:
+      description: "The entity ID of the local calendar."
+      example: "calendar.my_local_calendar"
+      required: true
+      selector:
+        entity:
+          domain: calendar
+    summary:
+      description: "The summary/title of the event."
+      example: "Lunch with Bob"
+      required: false
+      selector:
+        text:
