@@ -1,16 +1,18 @@
-add_event:
-  description: "Adds a future event to a local calendar."
+fill_day:
+  description: >
+    Fetches 6 todo items from JSONPlaceholder and creates them as back-to-back
+    2-hour events on the specified calendar day (08:00–20:00). Defaults to today.
   fields:
     calendar_id:
-      description: "The entity ID of the local calendar."
+      description: "The entity ID of the local calendar to fill."
       example: "calendar.my_local_calendar"
       required: true
       selector:
         entity:
           domain: calendar
-    summary:
-      description: "The summary/title of the event."
-      example: "Lunch with Bob"
+    target_date:
+      description: "The date to fill with events (YYYY-MM-DD). Defaults to today."
+      example: "2026-04-05"
       required: false
       selector:
-        text:
+        date:

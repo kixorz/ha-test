@@ -1,0 +1,10 @@
+get_next_event:
+  description: "Gets upcoming events from a local calendar for the next 24 hours."
+  fields:
+    calendar_id:
+      description: "The entity ID of the local calendar."
+      example: "calendar.my_local_calendar"
+      required: true
+      selector:
+        entity:
+          domain: calendar
